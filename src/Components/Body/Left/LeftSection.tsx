@@ -1,6 +1,6 @@
 import React from "react"
 
-import {Grid, Paper, makeStyles, Theme, createStyles, Container, Avatar} from "@material-ui/core";
+import {Grid, Paper, makeStyles, Theme, createStyles, Container} from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme: Theme) =>
