@@ -1,16 +1,36 @@
 import React from "react"
 
-import {Grid, Paper} from "@material-ui/core";
+import {Grid, Paper, makeStyles, Theme, createStyles, Container, Avatar} from "@material-ui/core";
 
-import { useStyles } from "../styles";
+
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        Paper: {
+            padding: theme.spacing(2, 5, 5, 5),
+            background: "#c0c0c0"
+        },
+        ImageContainer: {
+            borderWidth: 1
+        },
+        Image: {
+            maxWidth: "100%",
+            maxHeight: "100%",
+            resizeMode: 'contain'
+        }
+    }
+  ),
+);
 
 
 export default () => {
     const classes = useStyles();
     return (
-        <Grid item sm={4}>
+        <Grid item sm={3}>
             <Paper className={classes.Paper}>
-                left section (4)
+                <Container className={classes.ImageContainer}>
+                    <img src="avatar.jpg" className={classes.Image} />
+                </Container>
+                
             </Paper>
         </Grid>
     );
