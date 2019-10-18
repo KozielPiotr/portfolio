@@ -1,6 +1,9 @@
 import React from "react"
 
-import {Grid, Paper, makeStyles, Theme, createStyles, Container} from "@material-ui/core";
+import { Grid, Paper, makeStyles, Theme, createStyles } from "@material-ui/core"
+
+import Photo from "./Photo"
+import Contact from "./Contact"
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -8,17 +11,8 @@ const useStyles = makeStyles((theme: Theme) =>
         Paper: {
             padding: theme.spacing(2, 5, 5, 5),
             background: "#c0c0c0"
-        },
-        ImageContainer: {
-            borderWidth: 1
-        },
-        Image: {
-            maxWidth: "100%",
-            maxHeight: "100%",
-            resizeMode: "contain"
         }
-    }
-  ),
+    }),
 );
 
 
@@ -27,10 +21,8 @@ export default () => {
     return (
         <Grid item sm={3}>
             <Paper className={classes.Paper}>
-                <Container className={classes.ImageContainer}>
-                    <img src="avatar.jpg" alt="you should see my photo here. If you don't, maby it's better ;)" className={classes.Image} />
-                </Container>
-                
+                <Photo />
+                <Contact />
             </Paper>
         </Grid>
     );
