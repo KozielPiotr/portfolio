@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
         Image: {
             maxWidth: "100%",
             maxHeight: "100%",
-            resizeMode: 'contain'
+            resizeMode: "contain"
         }
     }
   ),
@@ -28,7 +28,7 @@ export default () => {
         <Grid item sm={3}>
             <Paper className={classes.Paper}>
                 <Container className={classes.ImageContainer}>
-                    <img src="avatar.jpg" className={classes.Image} />
+                    <img src="avatar.jpg" alt="you should see my photo here. If you don't, maby it's better ;)" className={classes.Image} />
                 </Container>
                 
             </Paper>
