@@ -1,6 +1,7 @@
 import React from "react";
 
-import {Footer, Sections, Header} from "./Components/index"
+import Index from "./Components/index"
+import Grid from '@material-ui/core/Grid';
 import {makeStyles, createStyles} from "@material-ui/core/styles";
 
 import "./App.css";
@@ -20,9 +21,9 @@ const App: React.FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.MainApp}>
-        <Header />
-        <Sections />
-        <Footer />
+      <Grid container sm={12} spacing={1}>
+        <Index />
+      </Grid>
     </ div>
   );
 }
