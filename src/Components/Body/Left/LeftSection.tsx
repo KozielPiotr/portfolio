@@ -1,9 +1,11 @@
 import React from "react"
 
-import { Grid, Paper, makeStyles, Theme, createStyles } from "@material-ui/core"
+import {Grid, Paper} from "@material-ui/core"
+import {makeStyles, Theme, createStyles} from "@material-ui/core/styles"
 
 import Photo from "./Photo"
 import Contact from "./Contact"
+import Skills from "./Skills"
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -23,6 +25,7 @@ export default () => {
             <Paper className={classes.Paper}>
                 <Photo />
                 <Contact />
+                <Skills />
             </Paper>
         </Grid>
     );

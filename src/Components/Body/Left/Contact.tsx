@@ -1,9 +1,10 @@
-import React, { Fragment } from "react"
+import React, {Fragment} from "react"
 
-import {List, ListItem, ListSubheader, makeStyles, Theme, createStyles, Typography, Link, Collapse} from "@material-ui/core"
+import {List, ListItem, ListSubheader, Typography, Link, Collapse} from "@material-ui/core"
+import {makeStyles, Theme, createStyles} from "@material-ui/core/styles"
 import {ExpandLess, ExpandMore} from "@material-ui/icons";
 
-import { personal_info } from "../../personal_data_storel";
+import {personal_info} from "../../personal_data_storel";
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -57,7 +58,6 @@ export default () => {
             >   
                 {personal_info.map((data) => 
                     <Fragment>
-                        
                         <Collapse in={open} timeout="auto" unmountOnExit>
                             <ListItem className={classes.mainItem}>
                                 <Typography variant={"h6"}>
