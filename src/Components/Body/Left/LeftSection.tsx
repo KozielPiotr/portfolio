@@ -6,6 +6,7 @@ import {makeStyles, Theme, createStyles} from "@material-ui/core/styles"
 import Photo from "./Photo"
 import Contact from "./Contact"
 import Skills from "./Skills"
+import Languages from "./Languages"
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -26,6 +27,7 @@ export default () => {
                 <Photo />
                 <Contact />
                 <Skills />
+                <Languages />
             </Paper>
         </Grid>
     );
