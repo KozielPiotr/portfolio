@@ -43,3 +43,8 @@ export const languages = [
         level: "basic"
     }
 ]
+
+export const social = {
+    github: "https://github.com/KozielPiotr",
+    linkedIn: "https://www.linkedin.com/in/piotr-kozie%C5%82-3b551354/"
+}

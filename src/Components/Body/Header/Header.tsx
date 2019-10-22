@@ -1,8 +1,11 @@
 import React from "react";
+
 import {makeStyles, createStyles, Theme} from "@material-ui/core/styles";
 import {AppBar, Toolbar, Typography, IconButton} from "@material-ui/core";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+import {social} from "../../personal_data_storel"
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -29,11 +32,11 @@ export default function IconTabs() {
     const classes = useStyles();
     
     const visitLkdin = () => {
-        window.open("https://www.linkedin.com/in/piotr-kozie%C5%82-3b551354/", "_blank")
+        window.open(social.linkedIn, "_blank")
       };
 
       const visitGithub = () => {
-        window.open("https://github.com/KozielPiotr", "_blank")
+        window.open(social.github, "_blank")
       };
 
 	return (
