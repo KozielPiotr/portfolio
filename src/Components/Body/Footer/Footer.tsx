@@ -1,33 +1,36 @@
-import React from 'react';
-
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import {makeStyles, createStyles} from '@material-ui/core/styles';
+import React from "react";
+import {makeStyles, createStyles, Theme} from "@material-ui/core/styles";
+import {AppBar, Toolbar, Typography, Button} from "@material-ui/core";
 
 
-const useStyles = makeStyles(() =>
-    createStyles({
-		Paper: {
-			textAlign: "center",
-		}
-    }),
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    menuButton: {
+      marginRight: theme.spacing(2),
+    },
+    title: {
+	  flexGrow: 1,
+	  textAlign: "right"
+	},
+	ahref: {
+		color: "inherit",
+	}
+  }),
 );
 
 
-export default () => {
-    const classes = useStyles();
-    return (
-		<Paper className={classes.Paper}>
-			<Tabs
-				value = {0}
-				indicatorColor="primary"
-				textColor="primary"
-				centered>
-				<Tab label="Item One" />
-				<Tab label="Item Two" />
-				<Tab label="Item Three" />
-			</Tabs>
-		</Paper>
-    );
+export default function IconTabs() {
+  const classes = useStyles();
+
+  return (
+    <AppBar position="static">
+		<Toolbar variant="dense">
+          	<Typography variant="caption" className={classes.title}>
+			</Typography>
+			<Typography variant="caption" className={classes.title}>
+			created by <a href={"mailto:koziel.piotr1988@gmail.com"} className={classes.ahref}>Piotr Kozieł</a> 2019
+			</Typography>
+		</Toolbar>
+	</AppBar>
+	);
 }
