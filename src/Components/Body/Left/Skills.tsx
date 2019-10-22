@@ -21,7 +21,7 @@ const useStyles = makeStyles(() =>
 
 export default () => {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
 
     const handleClick = () => {
         setOpen(!open);
