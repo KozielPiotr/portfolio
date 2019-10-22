@@ -26,7 +26,16 @@ const useStyles = makeStyles((theme: Theme) =>
 
 
 export default function IconTabs() {
-  	const classes = useStyles();
+    const classes = useStyles();
+    
+    const visitLkdin = () => {
+        window.open("https://www.linkedin.com/in/piotr-kozie%C5%82-3b551354/", "_blank")
+      };
+
+      const visitGithub = () => {
+        window.open("https://github.com/KozielPiotr", "_blank")
+      };
+
 	return (
 		<AppBar position="static">
 			<Toolbar variant="dense">
@@ -34,12 +43,12 @@ export default function IconTabs() {
                     Piotr Kozieł
 				</Typography>
                 <Typography variant="h6" className={classes.title2}>
-                    Check me on:
+                    Check me out on:
 				</Typography>
-                <IconButton className={classes.button}>
+                <IconButton onClick={visitGithub} className={classes.button}>
 				    <GitHubIcon className={classes.icon} />
                 </IconButton>
-                <IconButton className={classes.button}>
+                <IconButton onClick={visitLkdin} className={classes.button}>
 				    <LinkedInIcon className={classes.icon} />
                 </IconButton>
 			</Toolbar>
