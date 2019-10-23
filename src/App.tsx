@@ -12,6 +12,8 @@ const useStyles = makeStyles(() =>
     MainApp: {
       marginRight: "5%",
       marginLeft: "5%",
+      minHeight: "94%",
+      maxHeight: "94%",
     },
   }),
 );
@@ -21,7 +23,7 @@ const App: React.FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.MainApp}>
-      <Grid container sm={12} spacing={1}>
+      <Grid container spacing={1}>
         <Index />
       </Grid>
     </ div>

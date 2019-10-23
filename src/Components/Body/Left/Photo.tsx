@@ -1,10 +1,9 @@
 import React from "react"
 
-import {makeStyles, Theme, createStyles, Container} from "@material-ui/core";
+import {makeStyles, createStyles, Container} from "@material-ui/core";
 
 
-
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
     createStyles({
         ImageContainer: {
             borderWidth: 1

@@ -13,7 +13,9 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         Paper: {
             padding: theme.spacing(2, 5, 5, 3),
-            background: "#c0c0c0",
+            background: "linear-gradient(125deg, #F2EDEC 50%, #D3D2D2 90%)",
+            minHeight: "94%",
+            maxHeight: "94%",
         }
     }),
 );
