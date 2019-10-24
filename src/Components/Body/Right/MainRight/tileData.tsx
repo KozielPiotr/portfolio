@@ -1,20 +1,28 @@
-import image from "./reposImgs/image1.jpg";
+import scheduleImg from "./reposImgs/schedules.jpg";
+import hrHelperImg from "./reposImgs/hr-helper.jpg"
+import realEstatesWebCrawlerImg from "./reposImgs/webCrawlerPrices.gif"
+import eventFinderImg from "./reposImgs/eventFinder.png"
 
 
 export const tileData = [
     {
-        img: image,
-        title: "Grafiki",
+        img: scheduleImg,
+        title: "Schedules",
         technology: "Python, Flask, JS",
     },
     {
-        img: "a",
-        title: "Repo2",
-        technology: "language",
+        img: hrHelperImg,
+        title: "HR helper",
+        technology: "Python, Flask, JS",
     },
     {
-        img: "",
-        title: "Repo3",
-        technology: "language",
+        img: realEstatesWebCrawlerImg,
+        title: "web-crawler-for-real-estates-prices",
+        technology: "Python, web crawling, scrapy",
+    },
+    {
+        img: eventFinderImg,
+        title: "Schedule event finder",
+        technology: "Python, openpyxl",
     },
 ];
