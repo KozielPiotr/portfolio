@@ -33,11 +33,11 @@ export default function IconTabs() {
     
     const visitLkdin = () => {
         window.open(social.linkedIn, "_blank")
-      };
+    };
 
-      const visitGithub = () => {
+    const visitGithub = () => {
         window.open(social.github, "_blank")
-      };
+    };
 
 	return (
 		<AppBar position="static">
