@@ -2,6 +2,7 @@ import scheduleImg from "./reposImgs/schedules.jpg";
 import hrHelperImg from "./reposImgs/hr-helper.jpg"
 import realEstatesWebCrawlerImg from "./reposImgs/webCrawlerPrices.gif"
 import eventFinderImg from "./reposImgs/eventFinder.png"
+import portfolioImg from "./reposImgs/portfolio.jpeg"
 
 
 export const tileData = [
@@ -24,5 +25,10 @@ export const tileData = [
         img: eventFinderImg,
         title: "Schedule event finder",
         technology: "Python, openpyxl",
+    },
+    {
+        img: portfolioImg,
+        title: "Portfolio",
+        technology: "Typescript",
     },
 ];
