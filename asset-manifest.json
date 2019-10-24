@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfca195d.chunk.css",
-    "main.js": "/static/js/main.cd7c1aa4.chunk.js",
-    "main.js.map": "/static/js/main.cd7c1aa4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a5eaf332.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a5eaf332.js.map",
-    "static/js/2.fc137b7f.chunk.js": "/static/js/2.fc137b7f.chunk.js",
-    "static/js/2.fc137b7f.chunk.js.map": "/static/js/2.fc137b7f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2aca319b805a9116a13dbba0454da080.js": "/precache-manifest.2aca319b805a9116a13dbba0454da080.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.dfca195d.chunk.css.map": "/static/css/main.dfca195d.chunk.css.map",
-    "static/media/hr-helper.jpg": "/static/media/hr-helper.8dbe73e4.jpg",
-    "static/media/schedules.jpg": "/static/media/schedules.6c5ba132.jpg",
-    "static/media/webCrawlerPrices.gif": "/static/media/webCrawlerPrices.8ce1fd3d.gif"
+    "main.css": "/portfolio/static/css/main.dfca195d.chunk.css",
+    "main.js": "/portfolio/static/js/main.9745ccc1.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9745ccc1.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
+    "static/js/2.6b649211.chunk.js": "/portfolio/static/js/2.6b649211.chunk.js",
+    "static/js/2.6b649211.chunk.js.map": "/portfolio/static/js/2.6b649211.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b3cceecaf9eae73d318befd1e9502aa1.js": "/portfolio/precache-manifest.b3cceecaf9eae73d318befd1e9502aa1.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.dfca195d.chunk.css.map": "/portfolio/static/css/main.dfca195d.chunk.css.map",
+    "static/media/hr-helper.jpg": "/portfolio/static/media/hr-helper.8dbe73e4.jpg",
+    "static/media/portfolio.jpeg": "/portfolio/static/media/portfolio.cc0bf402.jpeg",
+    "static/media/schedules.jpg": "/portfolio/static/media/schedules.6c5ba132.jpg",
+    "static/media/webCrawlerPrices.gif": "/portfolio/static/media/webCrawlerPrices.8ce1fd3d.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5eaf332.js",
-    "static/js/2.fc137b7f.chunk.js",
+    "static/js/runtime-main.e92c632a.js",
+    "static/js/2.6b649211.chunk.js",
     "static/css/main.dfca195d.chunk.css",
-    "static/js/main.cd7c1aa4.chunk.js"
+    "static/js/main.9745ccc1.chunk.js"
   ]
 }
