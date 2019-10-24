@@ -30,17 +30,17 @@ export default () => {
         <List
             component="nav"
             subheader={
-                <ListSubheader component="div" id="nested-list-subheader" onClick={handleClick}>
-                    Skills: {open ? <ExpandLess /> : <ExpandMore />}
+                <ListSubheader key="subheader" component="div" id="nested-list-subheader" onClick={handleClick}>
+                    Skills: {open ? <ExpandLess key={"expless"} /> : <ExpandMore key={"expmore"} />}
                 </ListSubheader>
             }
             className={""}
             >   
             {skills.map((data) => 
-                <Fragment>
-                    <Collapse in={open} timeout="auto" unmountOnExit>
-                        <ListItem className={classes.mainItem}>
-                            <Typography variant={"h6"}>
+                <Fragment key={`${data}-frag`}>
+                    <Collapse key={`${data}-col`} in={open} timeout="auto" unmountOnExit>
+                        <ListItem key={data} className={classes.mainItem}>
+                            <Typography key={`${data}-typo`} variant={"h6"}>
                                 {data}
                             </Typography>
                         </ListItem>

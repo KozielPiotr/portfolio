@@ -36,23 +36,23 @@ export default () => {
             <List
                 component="nav"
                 subheader={
-                    <ListSubheader component="div" id="nested-list-subheader" onClick={handleClick}>
+                    <ListSubheader key={"subheader"} component="div" id="nested-list-subheader" onClick={handleClick}>
                         Languages: {open ? <ExpandLess /> : <ExpandMore />}
                     </ListSubheader>
                 }
                 className={""}
             >   
                 {languages.map((data) => 
-                    <Fragment>
-                        <Collapse in={open} timeout="auto" unmountOnExit>
-                            <ListItem className={classes.mainItem}>
-                                <Typography variant={"h6"}>
+                    <Fragment key={`${data.language}-fragment`}>
+                        <Collapse key={`${data.language}-col`} in={open} timeout="auto" unmountOnExit>
+                            <ListItem key={data.language} className={classes.mainItem}>
+                                <Typography key={`${data.language}-typo`} variant={"h6"}>
                                     {data.language}
                                 </Typography>
                             </ListItem>
-                            <List component="div" disablePadding>
-                                <ListItem className={classes.nested}>
-                                    <Typography variant={"subtitle1"}>
+                            <List key={`${data.language}-${data.level}`} component="div" disablePadding>
+                                <ListItem key={`${data.language}-${data.level}-item`} className={classes.nested}>
+                                    <Typography key={`${data.language}-${data.level}-typo`} variant={"subtitle1"}>
                                         {data.level}
                                     </Typography>
                                 </ListItem>

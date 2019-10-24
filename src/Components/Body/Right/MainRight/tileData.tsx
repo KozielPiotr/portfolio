@@ -8,13 +8,13 @@ export const tileData = [
         technology: "Python, Flask, JS",
     },
     {
-        img: "aaa",
-        title: "Image",
-        technology: "author",
+        img: "a",
+        title: "Repo2",
+        technology: "language",
     },
     {
-        img: image,
-        title: "Image",
-        technology: "author",
+        img: "",
+        title: "Repo3",
+        technology: "language",
     },
 ];

@@ -50,23 +50,23 @@ export default () => {
             <List
                 component="nav"
                 subheader={
-                    <ListSubheader component="div" id="nested-list-subheader" onClick={handleClick}>
-                        Contact: {open ? <ExpandLess /> : <ExpandMore />}
+                    <ListSubheader key={"subheader"} component="div" id="nested-list-subheader" onClick={handleClick}>
+                        Contact: {open ? <ExpandLess key={"expless"} /> : <ExpandMore key={"expmore"} />}
                     </ListSubheader>
                 }
                 className={""}
             >   
                 {personal_info.map((data) => 
-                    <Fragment>
-                        <Collapse in={open} timeout="auto" unmountOnExit>
-                            <ListItem className={classes.mainItem}>
-                                <Typography variant={"h6"}>
+                    <Fragment key={`${data.title}-frag`}>
+                        <Collapse key={`${data.title}-col`} in={open} timeout="auto" unmountOnExit>
+                            <ListItem key={data.title} className={classes.mainItem}>
+                                <Typography key={`${data.title}-typo`} variant={"h6"}>
                                     {data.title}
                                 </Typography>
                             </ListItem>
-                            <List component="div" disablePadding>
-                                <ListItem className={classes.nested}>
-                                    <Typography variant={"subtitle1"}>
+                            <List key={data.description} component="div" disablePadding>
+                                <ListItem key={data.title} className={classes.nested}>
+                                    <Typography key={`${data.title}-sub`} variant={"subtitle1"}>
                                         {isEmail(data.title, data.description)}
                                     </Typography>
                                 </ListItem>
