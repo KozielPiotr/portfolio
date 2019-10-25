@@ -1,8 +1,8 @@
 import React from "react";
 
-import {createStyles, makeStyles} from "@material-ui/core/styles";
-import {GridList, IconButton, GridListTile, GridListTileBar, ListSubheader} from "@material-ui/core";
-import GitHubIcon from '@material-ui/icons/GitHub';
+import {createStyles, makeStyles, Theme, withStyles} from "@material-ui/core/styles";
+import {GridList, IconButton, GridListTile, GridListTileBar, ListSubheader, Tooltip} from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 import {tileData} from "./tileData";
 
@@ -25,10 +25,21 @@ const useStyles = makeStyles(() =>
             height: "100%",
 		},
 		icon: {
-			color: 'rgba(255, 255, 255, 0.54)',
+			color: "rgba(255, 255, 255, 0.54)",
 		},
     }),
 );
+
+
+const HtmlTooltip = withStyles((theme: Theme) => ({
+	tooltip: {
+		backgroundColor: "rgba(0,0,0,0.7)",
+		color: "white",
+		maxWidth: 220,
+		fontSize: theme.typography.pxToRem(12),
+		border: "1px solid #dadde9",
+	},
+}))(Tooltip);
 
 
 export default function TitlebarGridList() {
@@ -44,18 +55,20 @@ export default function TitlebarGridList() {
 					<ListSubheader component="div">My Github repositories:</ListSubheader>
 				</GridListTile>
 				{tileData.map(tile => 
-					<GridListTile key={tile.img}>
-						<img src={tile.img} alt={tile.title} />
-					<GridListTileBar
-						title={tile.title}
-						subtitle={<span>{tile.technology}</span>}
-						actionIcon={
-							<IconButton onClick={() => visitGithub(tile.link)} className={classes.icon}>
-								<GitHubIcon />
-							</IconButton>
-						}
-					/>
-					</GridListTile>
+					<HtmlTooltip key={`${tile.title}-img`} title={tile.description} placement="left-start">
+						<GridListTile key={tile.img}>
+								<img src={tile.img} alt={tile.title} />
+							<GridListTileBar
+								title={tile.title}
+								subtitle={<span>{tile.technology}</span>}
+								actionIcon={
+									<IconButton onClick={() => visitGithub(tile.link)} className={classes.icon}>
+										<GitHubIcon />
+									</IconButton>
+								}
+							/>
+						</GridListTile>
+					</HtmlTooltip>
 				)}
       </GridList>
     </div>
