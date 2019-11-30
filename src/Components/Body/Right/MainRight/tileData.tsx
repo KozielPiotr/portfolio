@@ -19,7 +19,7 @@ export const tileData = [
         title: "Searcher",
         technology: "Python, Django, Beautilul Soup",
         link: "https://github.com/KozielPiotr/searcher",
-        description: "Announcement searcher basing at Craiglist website. It is biult with help of CLeer Programmer tutorial: https://www.youtube.com/watch?v=JT80XhYJdBw. For more details please visit Github repo."
+        description: "Announcement searcher basing at Craiglist website. It is biult with help of Clever Programmer tutorial: https://www.youtube.com/watch?v=JT80XhYJdBw. For more details please visit Github repo."
     },
     {
         img: hrHelperImg,
