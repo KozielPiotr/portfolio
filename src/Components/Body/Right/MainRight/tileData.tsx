@@ -3,6 +3,7 @@ import hrHelperImg from "./reposImgs/hr-helper.jpg"
 import realEstatesWebCrawlerImg from "./reposImgs/webCrawlerPrices.gif"
 import eventFinderImg from "./reposImgs/eventFinder.png"
 import portfolioImg from "./reposImgs/portfolio.jpeg"
+import searcherImg from "./reposImgs/searcherImg.jpg"
 
 
 export const tileData = [
