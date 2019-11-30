@@ -14,6 +14,13 @@ export const tileData = [
         description: "My first real web app. It allows user to manage work schedules for workers in many departaments. What is important, I implemented checking everything to be in accordance with Polish labor law. For more details please visit Github repo."
     },
     {
+        img: searcherImg,
+        title: "Searcher",
+        technology: "Python, Django, Beautilul Soup",
+        link: "https://github.com/KozielPiotr/searcher",
+        description: "Announcement searcher basing at Craiglist website. It is biult with help of CLeer Programmer tutorial: https://www.youtube.com/watch?v=JT80XhYJdBw. For more details please visit Github repo."
+    },
+    {
         img: hrHelperImg,
         title: "HR helper",
         technology: "Python, Flask, JS",
